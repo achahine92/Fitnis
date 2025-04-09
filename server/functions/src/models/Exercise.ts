@@ -5,7 +5,7 @@ const exerciseSchema = new mongoose.Schema({
         bodyPart: {type: String, required: true},
         equipment: {type: String, required: true},
         gifUrl: {type: String, required: true},
-        target: {type: String, required: true},
+        targetMuscle: {type: String, required: true},
         videoLinks: {type: [String], required: true},
         sets: {type: Number, required: true},
         reps: {type: Number, required: true},
