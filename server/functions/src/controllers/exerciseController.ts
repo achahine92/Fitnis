@@ -4,8 +4,8 @@ import HTTPHandler from "../helpers/HTTPHandler"
 // GET - READ ALL
 export const getExercises: HTTPHandler = async (req, res) => {
     try {
-        const exercises = await Exercise.find()
-        res.status(200).send(exercises)
+        // const exercises = await Exercise.find()
+        res.status(200).send("connected")
     } catch (err) {
         res.status(500).send("Internal Sever Error")
     }
@@ -46,4 +46,17 @@ export const deleteExercise: HTTPHandler = async (req, res) => {
     } catch (err) {
         res.status(404).send("Exercise not found")
     }
+}
+
+import { getExercisesByTarget } from "../services/ZylaServices"
+
+export const getZylaExercises: HTTPHandler = async (req, res) => {
+  const { targetMuscle } = req.params
+
+  try {
+    const exercises = await getExercisesByTarget(targetMuscle)
+    res.status(200).send(exercises)
+  } catch (err) {
+    res.status(500).send("Failed to fetch from Zyla API")
+  }
 }
