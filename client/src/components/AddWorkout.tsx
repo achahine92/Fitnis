@@ -8,7 +8,7 @@ const AddWorkout: FC = () => {
         <>
         <MuscleSelector />
         <br/>
-        Exercises:
+        <h2>Exercises:</h2>
         <br/>
         <WorkoutListByMuscle />
         </>
