@@ -4,7 +4,7 @@ const MuscleSelector: FC = () => {
     
     return (
         <>
-        (interactive muscle selector)
+        (interactive muscle selector goes here)
         </>
     )
 }

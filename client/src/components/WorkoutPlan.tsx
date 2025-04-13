@@ -7,6 +7,7 @@ const WorkoutPlan: FC = () => {
         <>
         Workout Plan:
         <br/>
+        <br/>
         <WorkoutPlanList />
         </>
     )

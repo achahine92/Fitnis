@@ -1,27 +1,20 @@
 import { FC } from "react"
-// import Profile from "./Profile"
-// import AddWorkout from "./AddWorkout"
-// import WorkoutPlan from "./WorkoutPlan"
 
 const Dashboard: FC = () => {
     
     return (
         <>
-        {/* <Profile /> */}
-        NAME - You're Crushing it!
+         <h1>"User Name" - You're Crushing it!</h1>
         <br/>
-        Progress Tracker:
+        <h2>Progress Tracker:</h2>
         <br/>
-        insert tracker here
+        (insert tracker diagram here)
         <br/>
-        Tips for success: insert tips here
+        Tips for success: (insert tips here)
         <br/>
         Today's Focus:
         <br/>
-        focus areas listed here
-
-        {/* <AddWorkout />
-        <WorkoutPlan /> */}
+        (focus areas listed here)
         </>
     )
 }

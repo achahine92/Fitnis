@@ -4,9 +4,10 @@ const WorkoutCard: FC = () => {
     
     return (
         <>
-        (name of exercise)
+        <h4>Name of Exercise</h4>
         <br/>
-        (description of exercise)
+        <li>(description of exercise)</li>
+        <br/>
         <br/>
         <button>Add Exercise to Plan</button>
         </>

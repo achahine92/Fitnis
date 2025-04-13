@@ -1,11 +1,12 @@
 import { FC } from "react"
 
-const WeightInput: FC = () => {
+const ReviewIntake: FC = () => {
     
     return (
         <>
+        
         </>
     )
 }
 
-export default WeightInput
+export default ReviewIntake
